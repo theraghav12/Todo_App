@@ -57,9 +57,10 @@ app.put("/completed", async function(req, res) {
     res.json({
         msg:"todo marked as completed"
     })
+  })
 
-
-        })
+  app.listen(3000);
+  
 
 // write basic express boilerplate code, 
 // with express.json() middleware
