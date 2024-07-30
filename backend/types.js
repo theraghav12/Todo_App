@@ -1,8 +1,9 @@
-const zod= require(zod);
+const zod = require('zod');
+
 
 const createTodo =zod.object({
-    title:zod.string(),
-    discription:zod.string()
+    title:zod.string().optional(),
+    description:zod.string().optional(),
 })
 
 const updateTodo =zod.object({
